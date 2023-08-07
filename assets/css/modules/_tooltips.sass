@@ -1,0 +1,41 @@
+// Define variables for easy customization
+$tooltipBackgroundColor: #333
+$tooltipTextColor: #fff
+$tooltipPadding: 8px
+$tooltipArrowSize: 8px
+
+// Main container
+.tooltip-container
+    position: relative
+    display: inline-block
+
+  // Tooltip content
+.tooltip-content
+    position: absolute
+    bottom: calc(100% + $tooltipArrowSize)
+    left: 50%
+    transform: translateX(-50%)
+    background-color: $tooltipBackgroundColor
+    color: $tooltipTextColor
+    padding: $tooltipPadding
+    border-radius: 4px
+    white-space: nowrap
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.3s, visibility 0.3s
+
+    // Tooltip arrow
+    &::before
+        content: ""
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translateX(-50%)
+        border-width: $tooltipArrowSize $tooltipArrowSize 0
+        border-style: solid
+        border-color: $tooltipBackgroundColor transparent transparent transparent
+
+  // Show tooltip on hover
+&:hover .tooltip-content
+    opacity: 1
+    visibility: visible

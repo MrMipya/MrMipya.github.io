@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Samipya Mainali | Owner | https://github.com/MrMipya
+
+# THANKS
+
+    [Bucky Maler](https://buckymaler.com/) -- For the website template, Global.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JS
+    jQuery, Modernizr, Normalize.css, Sass,
